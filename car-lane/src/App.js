@@ -1,6 +1,6 @@
 import React from 'react';
-import Home from './components/Home';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
+import Home from './components/Home';
 import Cars from './components/Cars';
 import Navbar from './components/NavBar';
 import Contact from './components/Contact';
