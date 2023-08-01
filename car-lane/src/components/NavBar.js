@@ -1,17 +1,19 @@
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+
 const Navbar = () => {
-    return ( 
-        <>
+  return (
+    <>
       <nav className="fixed top-0 left-0 right-0 flex justify-between items-center py-4 px-8 bg-purple-500 z-10">
-      <div className="text-white font-bold text-2xl">CarLane</div>
-      <ul className="flex space-x-4 text-white text-xl font-medium">
-        <li className="hover:bg-purple-600 px-4 py-2 rounded">Home</li>
-        <li className="hover:bg-purple-600 px-4 py-2 rounded">Cars</li>
-        <li className="hover:bg-purple-600 px-4 py-2 rounded">Services</li>
-      </ul>
-    </nav>
+        <NavLink to="/" className="text-white font-bold text-2xl">CarLane</NavLink>
+        <div className="space-x-4">
+          <NavLink exact to="/" className="text-white text-xl font-medium hover:bg-purple-600 px-4 py-2 rounded" activeClassName="bg-purple-600">Home</NavLink>
+          <NavLink to="/cars" className="text-white text-xl font-medium hover:bg-purple-600 px-4 py-2 rounded" activeClassName="bg-purple-600">Cars</NavLink>
+          <NavLink to="/contacts" className="text-white text-xl font-medium hover:bg-purple-600 px-4 py-2 rounded" activeClassName="bg-purple-600">Contacts</NavLink>
+        </div>
+      </nav>
     </>
-     
-     );
-}
- 
+  );
+};
+
 export default Navbar;
