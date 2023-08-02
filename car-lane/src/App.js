@@ -15,16 +15,17 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Home />   
-        </Route>
-        <Route path="/art">
+        </Route>      
+        <Route exact path="/art">
           <ArtworkList />
+        </Route>
+        <Route path="/art/:id">
+          <ArtWorkDetails />
         </Route>
         <Route path="/contacts">
           <Contact />
         </Route>
-        <Route>
-          <ArtWorkDetails />
-        </Route>
+        
       </Switch>
     </div>
     </div>

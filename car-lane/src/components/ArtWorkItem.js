@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 const ArtWorkItem = ({ artwork }) => {
   return (
@@ -12,8 +13,12 @@ const ArtWorkItem = ({ artwork }) => {
       )}
       <div className="p-4 flex flex-col justify-between ">
         <div>
+        <Link to={`/art/${artwork.id}`}>
+
           <p className="font-bold ">Title: {artwork.title}</p>
           <p className="italic ">Artist: {artwork.artist_title}</p>
+      </Link>
+
         </div>
         <div>
           <p className="">Origin: {artwork.place_of_origin}</p>
