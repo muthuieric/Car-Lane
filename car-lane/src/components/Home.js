@@ -1,5 +1,5 @@
 import React from 'react';
-import carImage from '../images/Shmes-Zenvo-TSR-S.avif';
+import carImage from '../images/homepagepic.jpg';
 
 const Home = () => {
   return (
@@ -10,17 +10,21 @@ const Home = () => {
       </div>
       
       {/* Hero Content */}
-      <div className="fixed bottom-0 left-0 w-full px-8 py-12 bg-purple-500 bg-opacity-75">
-        <h1 className="text-4xl text-white font-bold mb-4">Discover Artistic Marvels</h1>
-        <p className="text-white text-lg mb-8">
-          Immerse yourself in a world of creativity and expression through art.
+      <div className="fixed bottom-0 left-0 w-full px-8 py-6 bg-purple-500 bg-opacity-50">
+        <h1 className="text-4xl text-white font-bold m-2">Discover Artistic Marvels</h1>
+        <p className="text-white text-lg mb-2">
+        "Art is the lie that enables us to realize the truth." - Pablo Picasso
         </p>
-        <button className="bg-white text-purple-500 px-6 py-3 rounded-lg text-lg font-semibold">
-          Explore Art
-        </button>
+       
       </div>
     </>
   );
 };
 
 export default Home;
+
+
+
+ {/* <button className="bg-white text-purple-500 px-6 py-3 rounded-lg text-lg font-semibold">
+          Explore Art
+        </button> */}

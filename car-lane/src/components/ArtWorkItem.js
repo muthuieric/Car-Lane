@@ -10,7 +10,7 @@ const ArtWorkItem = ({ artwork }) => {
           className="rounded h-52 w-80 object-cover"
         />
       )}
-      <div className="p-4 flex flex-col justify-between">
+      <div className="p-4 flex flex-col justify-between ">
         <div>
           <p className="font-bold ">Title: {artwork.title}</p>
           <p className="italic ">Artist: {artwork.artist_title}</p>
