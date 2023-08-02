@@ -29,7 +29,6 @@ const Form = () => {
   console.log(formData);
 
   return ( 
-       <div className=''> 
       <form className='bg-white p-8 rounded shadow  w-full' onSubmit={handleSubmit}>
         <h1 className='text-3xl font-bold mb-4 text-purple-500'>Send a Message</h1>
 
@@ -77,7 +76,6 @@ const Form = () => {
           className='w-full bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded cursor-pointer'
         />
       </form>
-    </div>
   );
 };
 

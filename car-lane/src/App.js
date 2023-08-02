@@ -8,14 +8,14 @@ import ArtworkList from './components/ArtWorkList';
 function App() {
   return (
     <Router>
-    <div className="relative flex flex-col items-center justify-center h-screen">
+    <div >
     <Navbar />     
      <div>
       <Switch>
         <Route exact path="/">
           <Home />   
         </Route>
-        <Route path="/cars">
+        <Route path="/art">
           <ArtworkList />
         </Route>
         <Route path="/contacts">

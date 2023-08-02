@@ -4,11 +4,14 @@ const About = () => {
   return (
     <div className="flex flex-col">
       <div className="px-8 py-12 bg-white rounded-lg shadow-md ">
-        <h1 className="text-3xl font-bold mb-4 text-purple-500">About CarLane</h1>
+        <h1 className="text-3xl font-bold mb-4 text-purple-500">About VisonaryGerm</h1>
         <p className="text-black text-lg">
-          At CarLane, we believe that finding your dream car should be an exciting and hassle-free experience.
-          Our mission is to revolutionize the car-buying process by providing a comprehensive online platform
-          where users can explore and discover the perfect car that suits their lifestyle and budget.
+        VisionaryGerm is an online art museum dedicated to curating and displaying an
+        exquisite collection of artworks from across the globe. As an art enthusiast,
+        a visitor, or a connoisseur, you are invited to immerse yourself in the world
+         of artistic brilliance and creativity. Our platform celebrates the rich 
+         cultural heritage and diverse artistic expressions that have shaped human 
+         history and continue to inspire generations.
         </p>
       </div>
 
@@ -19,7 +22,7 @@ const About = () => {
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
         className="w-6 h-6 mr-2 text-purple-500 ">
           <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
-        <p className="text-black text-lg">Email: carlane@gmail.com</p>
+        <p className="text-black text-lg">Email: visonarygerm@gmail.com</p>
         </div>
         <div className='flex items-center mb-2'>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"

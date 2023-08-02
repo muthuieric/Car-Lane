@@ -4,7 +4,7 @@ import About from "./About";
 
 const Contact = () => {
   return (
-    <div className="flex flex-row flex-wrap justify-center mt-16">
+    <div className="flex flex-row flex-wrap mt-10">
       <div className="flex-1 p-4">
         <About />
       </div>
