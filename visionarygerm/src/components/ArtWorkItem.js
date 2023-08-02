@@ -9,7 +9,7 @@ const ArtWorkItem = ({ artwork }) => {
         <img
           src={`https://www.artic.edu/iiif/2/${artwork.image_id}/full/843,/0/default.jpg`}
           alt={artwork.title}
-          className="rounded h-52 w-80 object-cover"
+          className="rounded h-52 w-80 object-cover "
         />
       )}
       <div className="p-4 flex flex-col justify-between ">
