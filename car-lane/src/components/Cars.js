@@ -1,22 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import CarList from './CarList';
 
-const Cars = ({ carData }) => {
+const Cars = () => {
+  const [cars, setCars] = useState(null)
+
+  useEffect(() => {
+    fetch('http://localhost:8000/cars')
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        setCars(data);
+      })
+  }, [])
+
   return (
     <div>
-      <h1>Car Listings</h1>
-      <ul>
-        {carData.map((car) => (
-          <li key={car.that}>
-            <h2>{car.model}</h2>
-            <p>Make: {car.Make_id}</p>
-            <p>Year: {car.Year}</p>
-            <p>Price: {car.Price}</p>
-            {/* Add more details if needed */}
-          </li>
-        ))}
-      </ul>
+      {cars && <CarList cars={cars} />}
     </div>
   );
-};
-
+}
+ 
 export default Cars;
+
+ 
+
+  
