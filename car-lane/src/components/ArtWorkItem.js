@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ArtworkItem = ({ artwork }) => {
+const ArtWorkItem = ({ artwork }) => {
   return (
     <div key={artwork.id} className="mt-8 bg-white rounded h-100 w-80 m-2 border-2 flex flex-col">
       {artwork.image_id && (
@@ -24,4 +24,4 @@ const ArtworkItem = ({ artwork }) => {
   );
 };
 
-export default ArtworkItem;
+export default ArtWorkItem;

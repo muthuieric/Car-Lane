@@ -3,6 +3,7 @@ import ArtworkItem from './ArtWorkItem';
 
 const ArtworkList = () => {
   const [artworks, setArtworks] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchArtworks = async () => {
@@ -10,8 +11,10 @@ const ArtworkList = () => {
         const response = await fetch('https://api.artic.edu/api/v1/artworks');
         const data = await response.json();
         setArtworks(data.data);
+        setLoading(false);
       } catch (error) {
         console.error('Error fetching data:', error);
+        setLoading(false);
       }
     };
 
@@ -21,11 +24,17 @@ const ArtworkList = () => {
   return (
     <div>
       <h1 className='text-3xl font-bold mb-4 text-purple-500'>Artworks</h1>
-      <div className=" flex flex-wrap flex-row  ">   
-        {artworks.map((artwork) => (
-          <ArtworkItem key={artwork.id} artwork={artwork} />
-        ))}
-      </div>
+      {loading ? (
+        <div className="flex justify-center items-center h-screen text-3xl font-bold mb-4 text-purple-500">
+          Loading, please wait...
+        </div>
+      ) : (
+        <div className="flex flex-wrap flex-row">
+          {artworks.map((artwork) => (
+            <ArtworkItem key={artwork.id} artwork={artwork} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
