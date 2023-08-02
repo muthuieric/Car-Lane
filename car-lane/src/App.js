@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
 import Home from './components/Home';
-import Cars from './components/CarList';
 import Navbar from './components/NavBar';
 import Contact from './components/Contact';
+import ArtworkList from './components/ArtWorkList';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           <Home />   
         </Route>
         <Route path="/cars">
-          <Cars />
+          <ArtworkList />
         </Route>
         <Route path="/contacts">
           <Contact />
