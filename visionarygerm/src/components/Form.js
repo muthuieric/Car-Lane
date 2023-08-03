@@ -29,7 +29,7 @@ const Form = () => {
   console.log(formData);
 
   return ( 
-      <form className='bg-white p-8 rounded shadow  w-full' onSubmit={handleSubmit}>
+      <form className='bg-white p-8 rounded shadow  w-full mt-16' onSubmit={handleSubmit}>
         <h1 className='text-3xl font-bold mb-4 text-purple-500'>Send a Message</h1>
 
         <input

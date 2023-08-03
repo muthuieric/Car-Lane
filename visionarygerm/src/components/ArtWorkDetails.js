@@ -23,37 +23,31 @@ const ArtworkDetails = () => {
   }, [id]);
 
   return (
-    <div className="flex justify-center items-center h-screen ">
-      <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+    <div className="flex justify-center items-center">
+      <div className="w-11/12 mt-20  mx-4 my-auto ">
         {loading ? (
           <div className="flex justify-center items-center h-screen text-3xl font-bold text-purple-500">Loading, please wait...</div>
         ) : artwork ? (
-          <div className="md:flex">
+          <div className=" bg-white rounded-xl shadow-md overflow-hidden">
             {artwork.image_id && (
-              <div className="md:shrink-0">
-                <img
-                  src={`https://www.artic.edu/iiif/2/${artwork.image_id}/full/843,/0/default.jpg`}
-                  alt={artwork.title}
-                  className="h-48 w-full object-cover md:h-full md:w-48"
-                />
-              </div>
+              <img
+                src={`https://www.artic.edu/iiif/2/${artwork.image_id}/full/843,/0/default.jpg`}
+                alt={artwork.title}
+                className="w-full h-80 object-cover"
+              />
             )}
-            <div className="p-8">
-              <div className=" tracking-wide  font-semibold">Title: {artwork.title}</div>
-              <p className="italic mb-2 ">Artist: {artwork.artist_title}</p>
-              <p className="italic mb-2 ">Department: {artwork.department_title}</p>
-              <div>
-                <p className="mb-2 italic">Origin: {artwork.place_of_origin}</p>
-                <p className="mb-2 italic">Year: {artwork.date_display}</p>
-                <p className="mb-2">Credit Line: {artwork.credit_line}</p>
-              </div>
-              <div>
-                <p className="mb-2">Publication History: {artwork.publication_history}</p>
-              </div>
+            <div className="p-6">
+              <p className="tracking-wide font-semibold text-xl">Title: {artwork.title}</p>
+              <p className="italic mb-2 text-lg">Artist: {artwork.artist_title}</p>
+              <p className="italic mb-2 text-lg">Department: {artwork.department_title}</p>
+              <p className="mb-2 italic text-lg">Origin: {artwork.place_of_origin}</p>
+              <p className="mb-2 italic text-lg">Year: {artwork.date_display}</p>
+              <p className="mb-2 italic text-lg">Credit Line: {artwork.credit_line}</p>
+              <p className="mb-2 text-lg">Publication History: {artwork.publication_history}</p>
             </div>
           </div>
         ) : (
-          <div>Artwork not found.</div>
+          <div className="text-3xl font-bold text-purple-500">Artwork not found.</div>
         )}
       </div>
     </div>

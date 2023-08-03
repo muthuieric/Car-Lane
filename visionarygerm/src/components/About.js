@@ -2,8 +2,8 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className="flex flex-col">
-      <div className="px-8 py-12 bg-white rounded-lg shadow-md ">
+    <div className="flex flex-col mt-6">
+      <div className="px-8 py-8 bg-white rounded-lg shadow-md ">
         <h1 className="text-3xl font-bold mb-4 text-purple-500">About VisonaryGerm</h1>
         <p className="text-black text-lg">
         VisionaryGerm is an online art museum dedicated to curating and displaying an
@@ -15,7 +15,7 @@ const About = () => {
         </p>
       </div>
 
-      <div className="mt-8 px-8 py-12 bg-white rounded-lg shadow-md">
+      <div className="mt-2 px-8 py-8 bg-white rounded-lg shadow-md">
         <h1 className="text-3xl font-bold mb-4 text-purple-500">Reach Us</h1>
 
         <div className='flex items-center mb-2'>
