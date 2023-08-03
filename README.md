@@ -2,6 +2,10 @@
 VisionaryGerm is an online art museum dedicated to curating and displaying an exquisite collection of artworks. This repository contains the code for the VisionaryGerm website, built using React.
 
 ## Live Site
+https://visionarygerm.netlify.app/
+
+## Figma 
+[Figma Link](https://www.figma.com/file/Tpf1AVtwAHsHjWwGGseRYc/CarList?type=design&node-id=2%3A2&mode=design&t=RiF9WEsKrkApMWeq-1)
 
 
 
