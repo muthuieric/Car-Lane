@@ -29,7 +29,7 @@ const ArtworkList = () => {
           Loading, please wait...
         </div>
       ) : (
-        <div className="flex flex-wrap flex-row">
+        <div className="flex flex-wrap flex-row justify-center items-center">
           {artworks.map((artwork) => (
             <ArtworkItem key={artwork.id} artwork={artwork} />
           ))}

@@ -23,7 +23,7 @@ const ArtworkDetails = () => {
   }, [id]);
 
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center items-center h-screen ">
       <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         {loading ? (
           <div className="flex justify-center items-center h-screen text-3xl font-bold text-purple-500">Loading, please wait...</div>
