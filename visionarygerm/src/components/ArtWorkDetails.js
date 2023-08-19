@@ -38,11 +38,11 @@ const ArtworkDetails = () => {
             )}
             <div className="p-5">
               <p className="tracking-wide font-semibold text-xl">Title: {artwork.title}</p>
-              <p className="italic mb-1 text-lg">Artist: {artwork.artist_title}</p>
-              <p className="italic mb-1 text-lg">Department: {artwork.department_title}</p>
-              <p className="mb-1 italic text-lg">Origin: {artwork.place_of_origin}</p>
-              <p className="mb-1 italic text-lg">Year: {artwork.date_display}</p>
-              <p className="mb-1 italic text-lg">Credit Line: {artwork.credit_line}</p>
+              <p className="details">Artist: {artwork.artist_title}</p>
+              <p className="details">Department: {artwork.department_title}</p>
+              <p className="details">Origin: {artwork.place_of_origin}</p>
+              <p className="details">Year: {artwork.date_display}</p>
+              <p className="details">Credit Line: {artwork.credit_line}</p>
               <p className="mb-1 text-lg">Publication History: {artwork.publication_history}</p>
             </div>
           </div>

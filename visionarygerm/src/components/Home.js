@@ -1,12 +1,12 @@
 import React from 'react';
-import carImage from '../images/homepagepic.jpg';
+import artImage from '../images/homepagepic.jpg';
 
 const Home = () => {
   return (
     <>
       {/* Image Content */}
       <div className="w-full h-screen">
-        <img className="w-full h-full object-cover fixed inset-0" src={carImage} alt="Car" />
+        <img className="w-full h-full object-cover fixed inset-0" src={artImage} alt="Car" />
       </div>
 
  

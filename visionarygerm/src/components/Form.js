@@ -30,7 +30,7 @@ const Form = () => {
 
   return ( 
       <form className='bg-white p-8 rounded shadow  w-full mt-16' onSubmit={handleSubmit}>
-        <h1 className='text-3xl font-bold mb-4 text-purple-500'>Send a Message</h1>
+        <h1 className='title'>Send a Message</h1>
 
         <input
           type="text"
@@ -46,7 +46,7 @@ const Form = () => {
           type="email"
           placeholder='Enter Email:'
           id="email"
-          className='w-full px-4 py-2 mb-4 rounded border focus:outline-none focus:border-purple-500'
+          className='input'
           value={formData.email}
           onChange={handleChange}
           required
@@ -56,7 +56,7 @@ const Form = () => {
           type="tel"
           placeholder='Enter Phone Number:'
           id="phoneNumber"
-          className='w-full px-4 py-2 mb-4 rounded border focus:outline-none focus:border-purple-500'
+          className='input'
           value={formData.phoneNumber}
           onChange={handleChange}
         />
@@ -64,7 +64,7 @@ const Form = () => {
         <textarea
           placeholder='Enter Message:'
           id="message"
-          className='w-full px-4 py-2 mb-4 rounded border focus:outline-none focus:border-purple-500'
+          className='input'
           value={formData.message}
           onChange={handleChange}
           required
